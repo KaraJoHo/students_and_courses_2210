@@ -13,4 +13,8 @@ class Course
       true
     end
   end
+
+  def enroll(student_object)
+    @students << student_object
+  end
 end
