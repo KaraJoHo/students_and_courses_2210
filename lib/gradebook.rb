@@ -12,4 +12,12 @@ class Gradebook
   def students_in_course(course)
     student_list = course.students
   end
+
+  def failing_students(student)
+    if student.grade <= 59
+      true
+    else
+      false
+    end
+  end
 end
