@@ -7,7 +7,7 @@ class Course
   end
 
   def full?
-    if @students.count == 0
+    if @students.count == 0 
       false
     else
       true
