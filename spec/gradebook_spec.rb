@@ -57,4 +57,33 @@ RSpec.describe Gradebook do
     expect(gradebook.failing_students(student2)).to eq(true)
     end
   end
+  # describe '#track_grades' do
+  #   it 'tracks all grades across teh courses' do
+  #     gradebook = Gradebook.new("Mr. Teacher")
+  #     course1 = Course.new("Calculus", 2)
+  #     student1 = Student.new({name: "Morgan", age: 21})
+  #     student2 = Student.new({name: "Sam", age: 24})
+  #     course1.enroll(student1)
+  #     course1.enroll(student2)
+  #     student1.log_score(89)
+  #     student1.log_score(78)
+  #     student2.log_score(12)
+  #     student2.log_score(34)
+  #
+  #     expect(gradebook.track_grades(course1)).to eq([89,78,12,34])
+  #
+  #     # course2 = Course.new("Algebra", 2)
+  #     # student3 = Student.new({name: "Joe", age: 20})
+  #     # student4 = Student.new({name: "Dave", age: 26})
+  #     # course2.enroll(student3)
+  #     # course2.enroll(student4)
+  #     # student3.log_score(96)
+  #     # student3.log_score(88)
+  #     # student4.log_score(35)
+  #     # student4.log_score(78)
+  #     #
+  #     # expect (gradebook.course_list.track_grades).to eq([89,78,12,34])
+  #
+  #   end
+  
 end
